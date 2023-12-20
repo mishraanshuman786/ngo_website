@@ -66,7 +66,7 @@ function Slider() {
   });
 
   return (
-      <div className="container relative h-[600px] mx-auto">
+      <div className="content-around relative h-[600px] mx-auto">
         <div className="relative bg-gray-100  h-full flex  overflow-hidden">
           {imageObj.map((image, index) => {
             return (

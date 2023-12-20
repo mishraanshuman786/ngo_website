@@ -28,40 +28,41 @@ function Navbar() {
             <ul className="hidden ms-10 md:flex h-full">
               <li className="hover:bg-blue-950 h-full">
                 <Link className="h-full" href="#">
-                  <p className="ps-4 pe-4 pt-6 h-full text-xl">Home</p>
+                  <p className="ps-4 pe-4 pt-6 h-full xl:text-xl md:text-md sm:text-sm">Home</p>
                 </Link>
               </li>
               <li className="hover:bg-blue-950 h-full">
                 <Link className="h-full" href="#">
-                  <p className="ps-4 pe-4 pt-6 h-full text-xl">Services</p>
+                  <p className="ps-4 pe-4 pt-6 h-full xl:text-xl ">Services</p>
                 </Link>
               </li>
               <li className="hover:bg-blue-950 h-full">
                 <Link className="h-full" href="#">
-                  <p className="ps-4 pe-4 pt-6 h-full text-xl">Events</p>
+                  <p className="ps-4 pe-4 pt-6 h-full xl:text-xl md:text-md sm:text-sm">Events</p>
                 </Link>
               </li>
               <li className="hover:bg-blue-950 h-full">
                 <Link className="h-full" href="#">
-                  <p className="ps-4 pe-4 pt-6 h-full text-xl">Media</p>
+                  <p className="ps-4 pe-4 pt-6 h-full xl:text-xl md:text-md sm:text-sm">Media</p>
                 </Link>
               </li>
               <li className="hover:bg-blue-950 h-full">
                 <Link className="h-full" href="#">
-                  <p className="ps-4 pe-4 pt-6 h-full text-xl">Career</p>
+                  <p className="ps-4 pe-4 pt-6 h-full xl:text-xl md:text-md sm:text-sm">Career</p>
                 </Link>
               </li>
               <li className="hover:bg-blue-950 h-full">
                 <Link className="h-full" href="#">
-                  <p className="ps-4 pe-4 pt-6  h-full text-xl">Contact Us</p>
+                  <p className="ps-4 pe-4 pt-6  h-full xl:text-xl md:text-md sm:text-sm">Contact Us</p>
                 </Link>
               </li>
             </ul>
           </div>
           <div>
-            <ul className="me-10 pt-6">
-              <li>Language</li>
-            </ul>
+           <select className="me-10 mt-5 rounded-md p-2 text-black xl:text-xl md:text-md sm:text-sm">
+               <option className="p-4">English</option>
+               <option className="p-4">Hindi</option>
+           </select>
           </div>
         </div>
       </main>
