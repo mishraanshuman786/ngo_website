@@ -8,7 +8,7 @@ export default function Home() {
     <main>
       <Navbar />
 
-      <Slider />
+      <Slider/>
       <AboutSection />
       <Footer />
     </main>
