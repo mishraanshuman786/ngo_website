@@ -62,15 +62,15 @@ function Slider() {
       } else {
         setCurrentSlide((currentSlide + 1) % imageObj.length);
       }
-    }, 2000);
+    }, 4000);
   });
 
   return (
-      <div className="lg:w-[1024px]  relative h-[800px] mt-10">
-        <div className="relative bg-gray-100 mx-auto h-full flex overflow-hidden">
+      <div className="container relative h-[600px] mx-auto">
+        <div className="relative bg-gray-100  h-full flex  overflow-hidden">
           {imageObj.map((image, index) => {
             return (
-              <div key={index}>                             
+              <div key={index} >                             
                 <img
                   src={image.src}
                   className={
@@ -80,7 +80,7 @@ function Slider() {
                   }
                 />
                 <div
-                  className="text-black absolute  left-6 top-40 text-[60px]"
+                  className="text-black absolute  left-6 top-60 text-[100px]"
                   onClick={() => {
                     if (currentSlide === 0) {
                       setCurrentSlide(imageObj.length - 1);
@@ -94,7 +94,7 @@ function Slider() {
                 </div>
 
                 <div
-                  className="text-black absolute right-6 top-40 text-[60px]"
+                  className="text-black absolute right-6 top-60 text-[100px]"
                   onClick={() => {
                     if (currentSlide === imageObj.length - 1) {
                       setCurrentSlide(0);
