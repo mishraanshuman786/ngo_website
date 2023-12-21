@@ -70,32 +70,32 @@ function Navbar() {
       <div className={`z-50 duration-300 w-full text-white fixed ${toggle?'left-[0]':'left-[-100%]'}`}>
         <ul className="w-full md:hidden bg-black">
           <li className="hover:bg-blue-950 h-full">
-            <Link className="h-full" href="#">
+            <Link className="h-full" href="/">
               <p className="ps-4 pe-4 pt-6 pb-2 text-xl">Home</p>
             </Link>
           </li>
           <li className="hover:bg-blue-950 h-full">
-            <Link className="h-full" href="#">
+            <Link className="h-full" href="/Services">
               <p className="ps-4 pe-4 pt-6 pb-2 text-xl">Services</p>
             </Link>
           </li>
           <li className="hover:bg-blue-950 h-full">
-            <Link className="h-full" href="#">
+            <Link className="h-full" href="/Events">
               <p className="ps-4 pe-4 pt-6 pb-2 text-xl">Events</p>
             </Link>
           </li>
           <li className="hover:bg-blue-950 h-full">
-            <Link className="h-full" href="#">
+            <Link className="h-full" href="/Media">
               <p className="ps-4 pe-4 pt-6 pb-2 text-xl">Media</p>
             </Link>
           </li>
           <li className="hover:bg-blue-950 h-full">
-            <Link className="h-full" href="#">
+            <Link className="h-full" href="/Career">
               <p className="ps-4 pe-4 pt-6 pb-2 text-xl">Career</p>
             </Link>
           </li>
           <li className="hover:bg-blue-950 h-full">
-            <Link className="h-full" href="#">
+            <Link className="h-full" href="/Contact">
               <p className="ps-4 pe-4 pt-6 pb-2 text-xl">Contact Us</p>
             </Link>
           </li>

@@ -7,7 +7,7 @@ function Footer() {
         <div className="sm:flex sm:items-center sm:justify-between">
             <a href="https://flowbite.com/" className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
                 <img src="/logo.png" className="h-[140px] w-[140px]" alt="Flowbite Logo" />
-                <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">ADARSH FOUNDATION</span>
+                <h2 className="font-bold text-[30px] text-white">Adarsh Foundation</h2>
             </a>
             <ul className="flex flex-wrap items-center mb-6 xl:text-xl md:text-md sm:text-sm font-medium text-white sm:mb-0">
                 <li>
