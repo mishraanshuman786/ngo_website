@@ -27,32 +27,32 @@ function Navbar() {
 
             <ul className="hidden ms-10 md:flex h-full">
               <li className="hover:bg-blue-950 h-full">
-                <Link className="h-full" href="#">
+                <Link className="h-full" href="/">
                   <p className="ps-4 pe-4 pt-6 h-full xl:text-xl md:text-md sm:text-sm">Home</p>
                 </Link>
               </li>
               <li className="hover:bg-blue-950 h-full">
-                <Link className="h-full" href="#">
+                <Link className="h-full" href="/Services">
                   <p className="ps-4 pe-4 pt-6 h-full xl:text-xl ">Services</p>
                 </Link>
               </li>
               <li className="hover:bg-blue-950 h-full">
-                <Link className="h-full" href="#">
+                <Link className="h-full" href="/Events">
                   <p className="ps-4 pe-4 pt-6 h-full xl:text-xl md:text-md sm:text-sm">Events</p>
                 </Link>
               </li>
               <li className="hover:bg-blue-950 h-full">
-                <Link className="h-full" href="#">
+                <Link className="h-full" href="/Media">
                   <p className="ps-4 pe-4 pt-6 h-full xl:text-xl md:text-md sm:text-sm">Media</p>
                 </Link>
               </li>
               <li className="hover:bg-blue-950 h-full">
-                <Link className="h-full" href="#">
+                <Link className="h-full" href="/Career">
                   <p className="ps-4 pe-4 pt-6 h-full xl:text-xl md:text-md sm:text-sm">Career</p>
                 </Link>
               </li>
               <li className="hover:bg-blue-950 h-full">
-                <Link className="h-full" href="#">
+                <Link className="h-full" href="/Contact">
                   <p className="ps-4 pe-4 pt-6  h-full xl:text-xl md:text-md sm:text-sm">Contact Us</p>
                 </Link>
               </li>
