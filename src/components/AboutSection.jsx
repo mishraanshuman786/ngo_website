@@ -50,7 +50,7 @@ function AboutSection() {
             } absolute transition-transform duration-700 ease-in-out w-full`}
             data-carousel-item
           >
-            <div className="my-4 mx-2 ">
+            <div className="my-4 mx-10 ">
               <h1 className="font-bold text-[38px] lg:text-[40px] ">
                 {element.heading}
               </h1>
