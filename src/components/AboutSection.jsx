@@ -36,9 +36,9 @@ function AboutSection() {
   return (
     <div
       id="default-carousel"
-      className="relative w-full"
+      className="relative w-full h-[500px] md:h-[300px] mt-4 "
       data-carousel="slide"
-      style={{ height: "500px" }} // Set a fixed height for the container
+     
     >
       {/* Carousel wrapper */}
       <div className="relative h-full overflow-hidden rounded-lg">

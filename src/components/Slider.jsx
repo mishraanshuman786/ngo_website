@@ -14,7 +14,7 @@ function Slider() {
   }, []);
 
   return (
-    <div>
+    <div className="mb-4">
       <div
         id="default-carousel"
         className="relative w-full"
