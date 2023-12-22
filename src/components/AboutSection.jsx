@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState, useEffect } from "react";
 
 function AboutSection() {
@@ -6,14 +6,12 @@ function AboutSection() {
 
   const slides = [
     {
-      heading: "Generating fancy text",
-      para:
-        "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?",
+      heading: "Generating Fancy Text",
+      para: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. ", // your content
     },
     {
-      heading: "Generating Colored text",
-      para:
-        "So perhaps, you've generated some fancy text, and you're content that you can now copy and paste your fancy text in the comments section of funny cat videos, but perhaps you're wondering how it's even possible to change the font of your text? Is it some sort of hack? Are you copying and pasting an actual font Well, the answer is actually no - rather than generating fancy fonts, this converter creates fancy symbols. The explanation starts with unicode; an industry standard which creates the specification for thousands of different symbols and characters. All the characters that you see on your electronic devices, and printed in books, are likely specified by the unicode standard.",
+      heading: "Generating Colored Text",
+      para: "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those. ", // your content
     },
   ];
 
@@ -40,7 +38,7 @@ function AboutSection() {
       id="default-carousel"
       className="relative w-full"
       data-carousel="slide"
-      style={{ height: "400px" }} // Set a fixed height for the container
+      style={{ height: "500px" }} // Set a fixed height for the container
     >
       {/* Carousel wrapper */}
       <div className="relative h-full overflow-hidden rounded-lg">
@@ -48,13 +46,19 @@ function AboutSection() {
           <div
             key={index}
             className={`${
-              currentSlide === index ? "opacity-100" : "opacity-0"
-            } transition-opacity duration-700 ease-in-out`}
+              currentSlide === index ? "left-0" : "-left-full"
+            } absolute transition-transform duration-700 ease-in-out w-full`}
             data-carousel-item
           >
-            <div className="relative">
-              <h1 className="m-4  absolute font-extrabold text-[40px]">{element.heading}</h1>
-            <h5 className="absolute m-6 top-12 text-[20px]">{element.para}</h5>
+            <div className="my-4 mx-2 ">
+              <h1 className="font-bold text-[38px] lg:text-[40px] ">
+                {element.heading}
+              </h1>
+             
+              <h5 className=" top-12 text-[18px] lg:text-[20px]  mt-6">
+                {element.para}
+              </h5>
+              <br/>
             </div>
           </div>
         ))}
