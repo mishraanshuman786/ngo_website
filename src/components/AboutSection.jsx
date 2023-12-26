@@ -103,7 +103,7 @@ function AboutSection() {
       data-carousel="slide"
     >
       {/* Carousel wrapper */}
-      <div className="relative h-full overflow-hidden rounded-lg border border-black mx-10 ">
+      <div className="relative h-full bg-[whitesmoke] overflow-hidden rounded-lg border border-gray-600 mx-10 ">
         {slides.map((element, index) => (
           <div
             key={index}
