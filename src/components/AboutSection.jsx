@@ -73,7 +73,7 @@ function AboutSection() {
     },
     {
       content:(
-      <h1 className="text-[40px] font-bold text-center">*Together, let's build a future free from the chains of addiction.*</h1>
+      <h1 className="text-[40px] font-bold text-center">*Together, let&apos;s build a future free from the chains of addiction.*</h1>
       ),
     },
   ];
