@@ -6,12 +6,75 @@ function AboutSection() {
 
   const slides = [
     {
-      heading: "Generating Fancy Text",
-      para: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. ", // your content
+      content:(
+        <h1 className="text-[40px] text-center font-bold">*Welcome to Adarsh Foundation: Transforming Lives, Empowering Communities*</h1>), // your content
     },
     {
-      heading: "Generating Colored Text",
-      para: "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those. ", // your content
+      content:(
+        <div>
+      <h1 className="text-[30px] font-bold">About Us</h1><p className="text-[25px]">Adarsh Foundation, established in 1993, is a non-governmental organization (NGO) committed to creating positive and sustainable change in society. Over the past three decades, we have evolved and expanded our reach to make a significant impact on the lives of individuals and communities.
+      </p>
+      </div>
+      ),
+    },
+    {
+      content: (
+        <div>
+      <h1 className="text-[30px] font-bold">Our Journey</h1><p className="text-[25px]">Adarsh Foundation embarked on its mission in the state of Punjab, dedicating its initial ten years to addressing critical social issues and fostering development in the region. During this period, we laid the foundation for our commitment to social welfare, community development, and healthcare.</p>
+      </div>
+      ), 
+    },
+    {
+      content: (
+        <div>
+      <h1 className="text-[30px] font-bold">Expanding Horizons</h1><p className="text-[25px]">In the year 2003, driven by the desire to address a pressing issue affecting many lives, Adarsh Foundation shifted its focus to Varanasi. This transition marked a pivotal moment as we redirected our efforts towards helping those grappling with alcohol addiction.
+      </p>
+      </div>
+      ), // your content
+    },
+    {
+      content: (
+        <div>
+      <h1 className="text-[30px] font-bold">A Decade of Dedication</h1><p className="text-[25px]">For the past ten years, Adarsh Foundation has been tirelessly working in Varanasi to provide support, rehabilitation, and hope to individuals battling alcoholism. Our dedicated team of professionals, including counselors, healthcare experts, and social workers, collaborate to bring about a positive change in the lives of those affected by alcohol addiction.</p>
+      </div>
+      ), 
+    },
+    {
+      content:(
+        <div>
+      <h1 className="text-[30px] font-bold">Our Mission</h1><p className="text-[25px]">*Transforming Lives:* We believe in the power of transformation. Adarsh Foundation is committed to helping individuals break free from the shackles of alcohol addiction and regain control of their lives.
+
+      *Empowering Communities:* We recognize the importance of community support in the recovery process. Our programs aim to empower not just individuals but entire communities, fostering a culture of understanding and acceptance.
+      
+      *Prevention and Education:* Beyond rehabilitation, we actively engage in preventive measures and educational initiatives to raise awareness about the consequences of alcohol abuse and addiction.
+      </p>
+      </div>
+      ), // your content
+    },
+    {
+      content:(
+        <div>
+      <h1 className="text-[30px] font-bold"> Our Approach</h1><p className="text-[25px]">At Adarsh Foundation, we employ a holistic approach to address the complexities of alcohol addiction. Our programs encompass medical intervention, counseling, vocational training, and community integration. We believe in treating the individual as a whole, addressing both the physical and psychological aspects of addiction.
+
+      Adarsh Foundation welcomes support from individuals, businesses, and organizations that share our commitment to creating a healthier and more compassionate society. Whether through donations, volunteering, or spreading awareness, your involvement can make a significant difference in the lives of those we aim to help.
+      
+      </p>
+      </div>
+      ), // your content
+    },
+    {
+      content: (
+        <div>
+      <h1 className="text-[30px] font-bold text-center">Join us in our journey to bring about positive change, one life at a time.
+      </h1><h4 className="text-[28px] text-center">Join us in our journey to bring about positive change, one life at a time.
+      </h4>
+      </div>
+      ), // your content
+    },
+    {
+      content:(
+      <h1 className="text-[40px] font-bold text-center">*Together, let's build a future free from the chains of addiction.*</h1>
+      ),
     },
   ];
 
@@ -36,30 +99,20 @@ function AboutSection() {
   return (
     <div
       id="default-carousel"
-      className="relative w-full h-[500px] md:h-[300px] mt-4 "
+      className="relative w-full h-[500px] md:h-[300px] mt-4 mb-4  "
       data-carousel="slide"
-     
     >
       {/* Carousel wrapper */}
-      <div className="relative h-full overflow-hidden rounded-lg">
+      <div className="relative h-full overflow-hidden rounded-lg border border-black mx-10 ">
         {slides.map((element, index) => (
           <div
             key={index}
-            className={`${
-              currentSlide === index ? "left-0" : "-left-full"
-            } absolute transition-transform duration-700 ease-in-out w-full`}
+            className={`absolute w-full transition-transform duration-700 ease-in-out transform ${
+              currentSlide === index ? "translate-x-0" : "translate-x-full"
+            }`}
             data-carousel-item
           >
-            <div className="my-4 mx-10 ">
-              <h1 className="font-bold text-[38px] lg:text-[40px] ">
-                {element.heading}
-              </h1>
-             
-              <h5 className=" top-12 text-[18px] lg:text-[20px]  mt-6">
-                {element.para}
-              </h5>
-              <br/>
-            </div>
+            <div className="my-4 mx-10 ">{element.content}</div>
           </div>
         ))}
       </div>
