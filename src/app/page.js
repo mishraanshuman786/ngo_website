@@ -1,6 +1,7 @@
 import AboutSection from "@/components/AboutSection";
 import Slider from "@/components/Slider";
 import Map from "@/components/Map";
+import "../app/globals.css";
 export default function Home() {
   return (
     <main>
