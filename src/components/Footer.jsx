@@ -2,7 +2,8 @@ import React from 'react';
 
 function Footer() {
   return (
-<footer className="shadow bg-blue-600  w-full">
+<footer style={{backgroundImage: 'linear-gradient(to top, #0ba360 0%, #3cba92 100%)'}}
+ className="shadow   w-full">
     <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
         <div className="sm:flex sm:items-center sm:justify-between">
             <a href="https://flowbite.com/" className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">

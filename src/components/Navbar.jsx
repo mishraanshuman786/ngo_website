@@ -9,7 +9,9 @@ function Navbar() {
 
   return (
     <nav>
-      <main className="bg-blue-600 text-white font-semibold h-20">
+      <main
+       style={{backgroundImage: 'linear-gradient(to bottom, #0ba360 0%, #3cba92 100%)'}}
+        className="text-white font-semibold h-20">
         <div className="flex justify-between h-full">
           <div h-full>
             {toggle ? (

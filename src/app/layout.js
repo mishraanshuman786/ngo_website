@@ -11,7 +11,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-      <div className="bg-blue-500 flex items-center">
+      <div  style={{backgroundImage: 'linear-gradient(to top, #0ba360 0%, #3cba92 100%)'}}
+       className="flex items-center">
         <img src="/logo.png" alt="logo" className="w-[110px] h-[110px] ml-4" />
         <h2 className="font-bold text-[30px] text-white" >Adarsh Foundation</h2>
       </div>
