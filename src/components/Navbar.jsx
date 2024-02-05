@@ -10,8 +10,8 @@ function Navbar() {
   return (
     <nav>
       <main
-       style={{backgroundImage: 'linear-gradient(to bottom, #0ba360 0%, #3cba92 100%)'}}
-        className="text-white font-semibold h-20">
+      
+        className="text-white bg-blue-950 font-semibold h-20">
         <div className="flex justify-between h-full">
           <div h-full>
             {toggle ? (
@@ -70,7 +70,7 @@ function Navbar() {
       </main>
       {/* Responsiveness */}
       <div className={`z-50 duration-300 w-full text-white fixed ${toggle?'left-[0]':'left-[-100%]'}`}>
-        <ul className="w-full md:hidden bg-black">
+        <ul className="w-full md:hidden bg-blue-950">
           <li className="hover:bg-blue-950 h-full">
             <Link className="h-full" href="/">
               <p className="ps-4 pe-4 pt-6 pb-2 text-xl">Home</p>

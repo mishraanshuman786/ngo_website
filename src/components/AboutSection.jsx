@@ -1,23 +1,16 @@
-"use client";
-import React, { useState, useEffect } from "react";
+import React from "react";
+import image1 from "../components/../../public/logo.png"; // Import your image here
 
 function AboutSection() {
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  const slides = [
-    {
-      content: (
-        <h1 className="md:text-[40px] text-[30px] text-center font-bold">
-          *Welcome to Adarsh Foundation: Transforming Lives, Empowering
-          Communities*
-        </h1>
-      ), // your content
-    },
-    {
-      content: (
-        <div>
-          <h1 className="text-[30px] font-bold">About Us</h1>
-          <p className="text-[22px]">
+  return (
+    <div className="bg-blue-900 flex justify-center">
+      <div className="py-4 w-[90%] flex flex-col lg:flex-row justify-center items-center gap-2 lg:py-0 lg:h-[500px]">
+        {/* Content Section 1 */}
+        <div className="flex lg:h-[420px] w-[90%] lg:w-[20%] flex-col items-center rounded-lg p-4 text-white bg-red-900 hover:bg-white hover:text-red-900 hover:border-red-900 transition duration-300 relative overflow-hidden">
+          <div className="hover-transition absolute top-0 left-0 right-0 bottom-full bg-red-900"></div>
+          <img src="https://cdn-icons-png.flaticon.com/512/2666/2666093.png" alt="Image 1" className="w-24 h-24  mb-4" />
+          <h2 className="text-xl font-bold mb-4">About Us</h2>
+          <p className="text-sm text-center">
             Adarsh Foundation, established in 1993, is a non-governmental
             organization (NGO) committed to creating positive and sustainable
             change in society. Over the past three decades, we have evolved and
@@ -25,13 +18,13 @@ function AboutSection() {
             individuals and communities.
           </p>
         </div>
-      ),
-    },
-    {
-      content: (
-        <div>
-          <h1 className="text-[30px] font-bold">Our Journey</h1>
-          <p className="text-[22px]">
+
+        {/* Content Section 2 */}
+        <div className="flex w-[90%] lg:w-[20%] lg:h-[420px] flex-col items-center rounded-lg p-4 text-white bg-orange-700 hover:bg-white hover:text-orange-900 hover:border-orange-900 transition duration-300 relative overflow-hidden">
+          <div className="hover-transition absolute top-0 left-0 right-0 bottom-full bg-orange-700"></div>
+          <img src="https://cdn-icons-png.flaticon.com/512/4497/4497146.png" alt="Image 2" className="w-24 h-24  mb-4" />
+          <h2 className="text-xl font-bold mb-4">Our Journey</h2>
+          <p className="text-sm text-center">
             Adarsh Foundation embarked on its mission in the state of Punjab,
             dedicating its initial ten years to addressing critical social
             issues and fostering development in the region. During this period,
@@ -39,155 +32,46 @@ function AboutSection() {
             community development, and healthcare.
           </p>
         </div>
-      ),
-    },
-    {
-      content: (
-        <div>
-          <h1 className="text-[30px] font-bold">Expanding Horizons</h1>
-          <p className="text-[22px]">
+
+        {/* Content Section 3 */}
+        <div className="flex w-[90%] lg:w-[20%] lg:h-[420px] flex-col items-center rounded-lg p-4 text-white bg-green-600 hover:bg-white hover:text-green-900 hover:border-green-900 transition duration-300 relative overflow-hidden">
+          <div className="hover-transition absolute top-0 left-0 right-0 bottom-full bg-green-600"></div>
+          <img src="https://cdn-icons-png.flaticon.com/512/10506/10506823.png" alt="Image 3" className="w-24 h-24  mb-4" />
+          <h2 className="text-xl font-bold mb-4">Expanding Horizons</h2>
+          <p className="text-sm text-center">
             In the year 2003, driven by the desire to address a pressing issue
             affecting many lives, Adarsh Foundation shifted its focus to
             Varanasi. This transition marked a pivotal moment as we redirected
             our efforts towards helping those grappling with alcohol addiction.
           </p>
         </div>
-      ), // your content
-    },
-    {
-      content: (
-        <div>
-          <h1 className="text-[30px] font-bold">A Decade of Dedication</h1>
-          <p className="text-[22px]">
-            For the past ten years, Adarsh Foundation has been tirelessly
-            working in Varanasi to provide support, rehabilitation, and hope to
-            individuals battling alcoholism. Our dedicated team of
-            professionals, including counselors, healthcare experts, and social
-            workers, collaborate to bring about a positive change in the lives
-            of those affected by alcohol addiction.
-          </p>
-        </div>
-      ),
-    },
-    {
-      content: (
-        <div>
-          <h1 className="text-[30px] font-bold">Our Mission</h1>
-          <p className="text-[22px]">
-            *Transforming Lives:* We believe in the power of transformation.
+
+        {/* Content Section 4 */}
+        <div className="flex w-[90%] lg:w-[20%] lg:h-[420px] flex-col items-center rounded-lg p-4 text-white bg-red-600 hover:bg-white hover:text-red-600 hover:border-red-600 transition duration-300 relative overflow-hidden">
+          <div className="hover-transition absolute top-0 left-0 right-0 bottom-full bg-red-600"></div>
+          <img src="https://cdn-icons-png.flaticon.com/512/3721/3721184.png" alt="Image 4" className="w-24 h-24  mb-4" />
+          <h2 className="text-xl font-bold mb-4">Our Mission</h2>
+          <p className="text-sm text-center">
+            Transforming Lives: We believe in the power of transformation.
             Adarsh Foundation is committed to helping individuals break free
             from the shackles of alcohol addiction and regain control of their
-            lives. *Empowering Communities:* We recognize the importance of
-            community support in the recovery process. Our programs aim to
-            empower not just individuals but entire communities, fostering a
-            culture of understanding and acceptance. *Prevention and Education:*
-            Beyond rehabilitation, we actively engage in preventive measures and
-            educational initiatives to raise awareness about the consequences of
-            alcohol abuse and addiction.
+            lives. 
           </p>
         </div>
-      ), // your content
-    },
-    {
-      content: (
-        <div>
-          <h1 className="text-[30px] font-semibold"> Our Approach</h1>
-          <p className="text-[22px]">
+
+        {/* Content Section 5 */}
+        <div className="flex w-[90%] lg:w-[20%] lg:h-[420px] flex-col items-center rounded-lg p-4 text-white bg-yellow-600 hover:bg-white hover:text-yellow-600 hover:border-yellow-600 transition duration-300 relative overflow-hidden">
+          <div className="hover-transition absolute top-0 left-0 right-0 bottom-full bg-yellow-600"></div>
+          <img src="https://cdn-icons-png.flaticon.com/512/2114/2114951.png" alt="Image 5" className="w-24 h-24  mb-4" />
+          <h2 className="text-xl font-bold mb-4">Our Approach</h2>
+          <p className="text-sm text-center">
             At Adarsh Foundation, we employ a holistic approach to address the
             complexities of alcohol addiction. Our programs encompass medical
             intervention, counseling, vocational training, and community
-            integration. We believe in treating the individual as a whole,
-            addressing both the physical and psychological aspects of addiction.
-            Adarsh Foundation welcomes support from individuals, businesses, and
-            organizations that share our commitment to creating a healthier and
-            more compassionate society. Whether through donations, volunteering,
-            or spreading awareness, your involvement can make a significant
-            difference in the lives of those we aim to help.
+            integration.
           </p>
         </div>
-      ), // your content
-    },
-    {
-      content: (
-        <div>
-          <h4 className="text-[28px] font-semibold text-center">
-            Join us in our journey to bring about positive change, one life at a
-            time.
-          </h4>
-        </div>
-      ), // your content
-    },
-    {
-      content: (
-        <h1 className="md:text-[40px] text-[30px] font-semibold text-center">
-          *Together, let&apos;s build a future free from the
-          chains of addiction.*
-        </h1>
-      ),
-    },
-  ];
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
-    }, 4000);
-
-    return () => clearInterval(interval);
-  }, [slides.length]);
-
-  const prevSlide = () => {
-    setCurrentSlide(
-      (prevSlide) => (prevSlide - 1 + slides.length) % slides.length
-    );
-  };
-
-  const nextSlide = () => {
-    setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
-  };
-
-  return (
-    <div
-      id="default-carousel"
-      className="relative w-full h-[500px] md:h-[300px] mt-4 mb-4  "
-      data-carousel="slide"
-    >
-      {/* Carousel wrapper */}
-      <div
-        style={{
-          backgroundImage: "linear-gradient(to top, #0ba360 0%, #3cba92 100%)",
-        }}
-        className="relative h-full flex justify-center items-center  text-white overflow-hidden rounded-lg border order-gray-600 md:mx-10 mx-4 "
-      >
-        {slides.map((element, index) => (
-          <div
-            key={index}
-            className={`absolute w-full  transition-transform duration-700 ease-in-out transform ${
-              currentSlide === index ? "translate-x-0" : "translate-x-full"
-            }`}
-            data-carousel-item
-          >
-            <div className="my-4 mx-10 font-semibold ">{element.content}</div>
-          </div>
-        ))}
       </div>
-
-      {/* Slider controls */}
-      <button
-        type="button"
-        className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-        data-carousel-prev
-        onClick={prevSlide}
-      >
-        {/* ... (Previous button content) */}
-      </button>
-      <button
-        type="button"
-        className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-        data-carousel-next
-        onClick={nextSlide}
-      >
-        {/* ... (Next button content) */}
-      </button>
     </div>
   );
 }

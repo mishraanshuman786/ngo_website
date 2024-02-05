@@ -3,8 +3,10 @@ import VideoSection from "@/components/VideoSection";
 
 function Media() {
   return (
-    <div style={{backgroundImage: 'linear-gradient(to top, #0ba360 0%, #3cba92 100%)'}}>
-      <h1 className="text-center text-white lg:text-[40px] ">Media Section</h1>
+    <div className="bg-gray-300">
+      <div className="bg-blue-900 py-8">
+        <h1 className="text-3xl font-bold text-center text-white">Our Services</h1>
+      </div>
       {/* Videos using Cards */}
       <VideoSection />
 
