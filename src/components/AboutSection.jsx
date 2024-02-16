@@ -1,6 +1,6 @@
 import React from "react";
 import image1 from "../components/../../public/logo.png"; // Import your image here
-
+// temporary
 function AboutSection() {
   return (
     <div className="bg-blue-900 flex justify-center">
